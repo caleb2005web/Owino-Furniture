@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: o;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background: #f8f9fa;
+  color: #000000;
+  line-height: 1.6;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+button {
+  padding: 8px 16px;
+  margin: 5px;
+}
+header {
+  background: #000033;
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header h1 {
+  font-size: 1.6rem;
+  color: #660000;
+  font-weight: 700;
+}
+nav a {
+  color: #660066;
+  margin-left: 1.2rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.collection-h2 {
+  padding: 20px;
+  color: black;
+}
+.container {
+  padding: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+.card img {
+  width: 100px;
+  border-radius: 6px;
+}
+.button {
+  display: black;
+  background: green;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+footer {
+  text-align: center;
+  background: #000000;
+  padding: 2rem;
+  color: #94a3b8;
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav a {
+    margin: 0.75rem;
+  }
+  .grid {
+    grid-template-columns: repeat(4, ifr);
+  }
+}

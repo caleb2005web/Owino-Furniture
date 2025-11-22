@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-storage.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="admin.js" defer></script>
+  </head>
+  <body>
+    <div class="container" id="login-screen">
+        <h2>Admin Login </h2>
+        <input id="password" type="password" placeholder="Enter Password">
+        <button onclick="login()">Login</button>
+
+    </div>
+    <div class="container" id="admin-screen" style="display:none;">
+      <h2>Add Product</h2>
+      <input id="name" placeholder="Product name"></br></br>
+      <input id="price" type="number" placeholder="Price"></br></br>
+      <textarea id="description" placeholder="Description"></textarea></br></br>
+      
+      <select id="category">
+        <option value="beds">Beds</option>
+        <option value="sofas">Sofas</option>
+        <option value="tables">Tables</option>
+        <option value="outdoors">Outdoors</option>
+        <option value="storage">Storage</option>
+        <option value="dining">Dining</option>
+      </select>
+      <input id="image" type="file"></br></br>
+      <button onclick="addProduct()">Upload</button>
+      <h2>Existing Products</h2>
+      <div id="admin-list"></div>
+    </div>
+</body>
+</html>
